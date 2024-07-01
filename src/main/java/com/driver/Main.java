@@ -25,8 +25,8 @@ public class Main {
         B objB = new B();
 
         // Call the overridden meth method from class B
-        String resultB = objB.meth();
-        System.out.println(resultB);  // Output: "Method is overridden in Extended class B"
+//        String resultB = objB.meth();
+//        System.out.println(resultB);  // Output: "Method is overridden in Extended class B"
 
         // Call the meth method from class A using objB
         String resultA = objB.meth();  // Calls overridden method in B
