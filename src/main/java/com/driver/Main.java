@@ -1,10 +1,6 @@
 package com.driver;
 
-// Main class to demonstrate method overriding
-// Define the class A
-// Define the superclass A
-// Define the superclass A
-// Define the superclass A
+/// Define the superclass A
 class A {
     // Method meth that returns a String
     public String meth() {
@@ -29,6 +25,10 @@ public class Main {
 
         // Call the overridden meth method from class B
         String resultB = objB.meth();
-        System.out.println(resultB);
+        System.out.println(resultB);  // Output: "Method is overridden in Extended class B"
+
+        // You can also call the meth method from class A through objB
+        String resultA = ((A)objB).meth();
+        System.out.println(resultA);  // Output: "Method is overridden in Extended class B" because objB is of class B
     }
 }
