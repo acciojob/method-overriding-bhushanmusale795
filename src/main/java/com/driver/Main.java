@@ -5,7 +5,7 @@ package com.driver;
 
 // Main class to test the functionality
 public class Main {
-   static class A {
+   public static class A {
         // Method meth that returns a String
         public String meth() {
             return "Invoking method from class A";
@@ -13,7 +13,7 @@ public class Main {
     }
 
     // Define the subclass B which extends A
-   static class B extends A {
+  public  static class B extends A {
         // Override the meth method from class A
         @Override
         public String meth() {
